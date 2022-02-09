@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body style="height: 100%;">
+    <header class="header">
+        <div id="particles-js"></div>
+        <nav class="container navbar">
+            <img style="width: 87px;" src="./img/computer.png" alt="">
+            <ul class="nav-list">
+                <li class="nav-item">Información academica</li>
+                <li class="nav-item">Mis Proyectos</li>
+                <li class="nav-item">Mis habilidades</li>
+            </ul>
+        </nav>
+        <section class="section-information">
+            <div class="div-contenedor">
+                <div class="div-foto">
+                    <img src="./img/foto.jpg" alt="">
+                </div>
+                <div class="text-description">
+                    <p id="description" class="descripcion">Hola soy Bertol Franco, Desarrollador de software</p>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="information-estudios">
+        <div class="contenedor-info">
+            <h1 class="title-estudios">Acerca de mi</h1>
+            <p class="descripcion-personal">Estudiante de la carrera de Computación e informática, con buenas relaciones
+                interpersonales, adaptable a los cambios, con capacidad de trabajar en equipo, creativo, pro activo,
+                organizado, con interés en desarrollarse profesionalmente como Desarrollador net o en java. Me motiva
+                escuchar
+                música e investigar sobre nuevas tecnologías que me ayuden a estar más capacitado.</p>
+            <h3 class="text-estudios">Estudios superiores:</h3>
+            <div class="contenedor-estudios">
+                <span>Instituto Superior Tecnológico Cibertec</span>
+                <span>Marzo 2015 - Julio 2018</span>
+
+            </div>
+            <div class="contenedor-estudios">
+                <span>Instituto sisé</span>
+                <span>Agosto 2015 - Abril 2016</span>
+            </div>
+        </div>
+    </section>
+    <section class="information-estudios">
+        <div class="contenedor-info">
+            <h1 class="title-estudios">Mis habilidades</h1>
+            <div class="contenedor-skill m-top">
+                <div class="div-front">
+                    <img src="./img/front-end.png" alt="">
+                    <span class="text-skill">Front End</span>
+                    <p class="m-top">Tengo amplia experiencia desarrollo aplicaciones desde el lado del cliente ,
+                        utilizando las tecnologias mas recientes</p>
+                </div>
+                <div class="div-back">
+                    <img src="./img/back-end.png" alt="">
+                    <span class="text-skill">Back End</span>
+                    <p class="m-top">Tengo amplia experiencia desarrollo aplicaciones desde el lado del servidor ,
+                        utilizando las tecnologias mas recientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="information-estudios">
+        <div class="contenedor-info">
+            <h1 class="title-estudios">Skills</h1>
+            <div class="contenedor-skills m-top">
+                <ul id="skills">
+                    <li>
+                        HTML
+                        <div class="bar-container">
+                            <span class="bar" data-bar='{ "color": "#19f" }'>
+                                <span class="pct">82%</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        CSS
+                        <div class="bar-container">
+                            <span class="bar" data-bar='{ "color": "#27ae60", "delay": 600 }'>
+                                <span class="pct">100%</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        PHP
+                        <div class="bar-container">
+                            <span class="bar" data-bar='{ "color": "#9b59b6", "delay": 1200 }'>
+                                <span class="pct">60%</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        SQL
+                        <div class="bar-container">
+                            <span class="bar" data-bar='{ "color": "#ae8a33", "delay": 1800 }'>
+                                <span class="pct">30%</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <div class="form-contact">
+                <div class="form-header">
+                    <span class="title">Contactame</span>
+                </div>
+                <div class="form-input" style="margin-top:20px">
+                    <div class="form-group">
+                        <label for="">Nombres</label>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Apellidos</label>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="form-group-motivo">
+                        <label for="">Motivo</label>
+                        <textarea class="text-area" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group-btn">
+                        <button class="btn-enviar">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/skills.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/stats.js"></script>
+
+    <script>
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function () {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+    </script>
+</body>
+
+</html>
