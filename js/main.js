@@ -23,4 +23,11 @@ const maquinaEscribir3 = (text = '',tiempo = 2000, etiqueta = '') => {
   }
 
 
-  maquinaEscribir3("",50, maquina4)
+  maquinaEscribir3("",50, maquina4);
+
+  const navtoggle = document.querySelector('.icon-mobile');
+  const navmenumobile = document.querySelector('.nav-list');
+
+  navtoggle.addEventListener('click', () => {
+    navmenumobile.classList.toggle('nav-visible');
+  })
