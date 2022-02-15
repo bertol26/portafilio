@@ -31,3 +31,15 @@ const maquinaEscribir3 = (text = '',tiempo = 2000, etiqueta = '') => {
   navtoggle.addEventListener('click', () => {
     navmenumobile.classList.toggle('nav-visible');
   })
+
+
+  $('.nav-list a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    
+    var id = $(this).attr('href'), 
+        targetOffset = $(id).offset().top;
+    
+    $('html, body').animate({ 
+      scrollTop: targetOffset - 100
+     }, 500);
+  });
