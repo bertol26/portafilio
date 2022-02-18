@@ -24,6 +24,7 @@
 
 body {
     scroll-behavior: smooth;
+    background-image: linear-gradient(to right top, #420023, #3c214d, #163e69, #005570, #056969);
 }
 
 * {
@@ -48,7 +49,7 @@ body {
   height: 90px;
   align-items: center;
   position:fixed;
-  background: rgb(0, 14, 36) !important;
+  background: linear-gradient(90deg, rgba(14,9,121,1) 0%, rgba(14,9,121,1) 33%, rgba(78,18,163,1) 100%) !important;
   z-index: 999 !important;
   opacity: 0.8;
 }
@@ -80,7 +81,7 @@ body {
     background: rgb(0, 14, 36);
     position: relative;
     z-index: 99;
-    background: url('../img/fondo-header.jpg');
+    background: url('../img/fondo-header.png');
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -151,12 +152,13 @@ body {
 }
 
 .information-estudios {
-    margin-top: 5%;
+    padding-top: 6%;
     width: 100%;
     display: flex;
     justify-content:center;
     padding-left: 7%;
     padding-right: 7%;
+    color: #ffffff;
 }
 
 
@@ -176,7 +178,7 @@ body {
     margin-top: 4%;
     font-weight: normal;
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .text-estudios {
@@ -341,8 +343,6 @@ canvas{
   }
 
   .footer {
-    background: rgb(0, 14, 36);
-    margin-top: 3%;
     width: 100%;
   }
 
@@ -449,7 +449,7 @@ canvas{
         left: 0;
         top: 60px;
         width: 100%;
-        background: rgb(0, 14, 36);
+        background: linear-gradient(90deg, rgba(14,9,121,1) 0%, rgba(14,9,121,1) 33%, rgba(78,18,163,1) 100%) !important;
         left: 100%;
         height: 40%;
         padding-top: 25px;
