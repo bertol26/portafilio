@@ -193,6 +193,19 @@ body {
     justify-content: space-between;
 }
 
+.contenedor-proyectos {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5%;
+}
+
+.content-proyecto {
+   flex-basis: 400px;
+   flex-grow: 1;
+}
+
 .section-skill {
     width: 100%;
 }
